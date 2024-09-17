@@ -1,0 +1,25 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-ClfQNliP.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-CbmquKCd.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/views/home.vue"
+    ]
+  },
+  "resources/js/views/home.vue": {
+    "file": "assets/home-CFVGGcPM.js",
+    "name": "home",
+    "src": "resources/js/views/home.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ]
+  }
+}

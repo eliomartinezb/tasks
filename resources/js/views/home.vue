@@ -69,7 +69,7 @@ const openDeleteModal = (element) => {
 const deleteTask = () => {
     axios
         .delete('/api/tasks/' + deleteElement.value.id)
-        .then((response) => {
+        .then(() => {
             let index = tasks.value.indexOf(deleteElement.value)
             tasks.value.splice(index, 1);
             deleteElement.value = {name: "test 1", priority: 1};
@@ -204,7 +204,7 @@ onMounted(() => {
     <div class="flex flex-row">
         <div class="w-full h-screen border-r-black">
             <div class="flex justify-around">
-                <div class="p-4 flex flex-row items-center justify-cente">
+                <div class="p-4 flex flex-row items-center justify-center">
                     <div class="px-3 py-2 mr-2">Tasks</div>
                     <div @click="openAddModal">
                         <font-awesome-icon :icon="['fas', 'plus']"/>
